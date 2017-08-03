@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Astronomy Picture Of The Day</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <img *ngIf="media_type == 'image'" src="{{image}}" />
+    <video src="{{url}}" *ngIf="media_type != 'image'"></video>
+  <ion-card>
+  <ion-card-header>
+    Title: <b> {{title}} </b>
+    <br />
+    Copyright: <b>{{copyright}}</b>
+    <br />
+    Date:  <b>{{date}}</b>
+    <hr />
+  </ion-card-header>
+  <ion-card-content>
+    {{explanation}}
+  </ion-card-content>
+</ion-card>
+</ion-content>
