@@ -1,6 +1,6 @@
 <h1> APOD NASA </h1>
 <small> Astronomy of the Day </small>
-<img src="preview.gif" />
+<video src="preview.mp4">
 
 <h2> How to run locally? </h2>
 ``bash
